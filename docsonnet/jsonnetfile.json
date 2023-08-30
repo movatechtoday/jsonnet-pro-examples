@@ -9,7 +9,16 @@
         }
       },
       "version": "master"
+    },
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/movatechtoday/docsonnet",
+          "subdir": "doc-util"
+        }
+      },
+      "version": "master"
     }
   ],
-  "legacyImports": true
+  "legacyImports": false
 }
