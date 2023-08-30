@@ -1,3 +1,5 @@
+#### The plugin checks if there is the following import
+#### If it is present -> extract type/parameters information from the accompanying docsonnet definition
 local d = import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet';
 
 #####
