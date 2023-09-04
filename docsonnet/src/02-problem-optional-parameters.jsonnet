@@ -1,5 +1,5 @@
 #### The standard docsonnet library  cannot encode optional parameter information
-#### The patched version adds a new field -- isOptional
+#### The patched version adds a new field -- optional
 local d = import 'github.com/movatechtoday/docsonnet/doc-util/main.libsonnet';
 
 ### if you generate the output
@@ -9,13 +9,13 @@ local d = import 'github.com/movatechtoday/docsonnet/doc-util/main.libsonnet';
   '#required_parameter': d.fn(
     help='',
     args=[
-      d.arg('param1', d.T.string, isOptional=false),
+      d.arg('param1', d.T.string, optional=false),
     ]
   ),
   '#optional_parameter': d.fn(
     help='',
     args=[
-      d.arg('param1', d.T.string, default=null, isOptional=true),
+      d.arg('param1', d.T.string, default=null, optional=true),
     ]
   ),
 
